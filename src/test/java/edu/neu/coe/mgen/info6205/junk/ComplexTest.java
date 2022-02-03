@@ -17,4 +17,10 @@ public class ComplexTest {
     public void mag() {
         assertEquals(1.0, new Complex(1, 0).mag(), 1E-7);
     }
+
+    @Test
+    public void conjugate() {
+        Complex complex = new Complex(1, -1);
+        assertEquals(new Complex(1, 1), complex.conjugate());
+    }
 }
